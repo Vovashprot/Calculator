@@ -20,6 +20,14 @@ public class HelloService implements HelloServiceInterface {
         int num3 = num1 - num2;
         return num1+"-"+num2+"="+num3;
     }
+    public String calculatorMultiply(int num1, int num2){
+        int num3 = num1 * num2;
+        return num1+"*"+num2+"="+num3;
+    }
+    public String calculatorDivide(float num1, float num2){
+        float num3 = num1 / num2;
+        return num1+"/"+num2+"="+num3;
+    }
 }
 
 
