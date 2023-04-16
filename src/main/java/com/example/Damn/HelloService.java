@@ -25,6 +25,9 @@ public class HelloService implements HelloServiceInterface {
         return num1+"*"+num2+"="+num3;
     }
     public String calculatorDivide(float num1, float num2){
+        if (num2 == 0){
+            throw new IllegalArgumentException("Нельзя делить на ноль.");
+        }
         float num3 = num1 / num2;
         return num1+"/"+num2+"="+num3;
     }
