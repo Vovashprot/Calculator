@@ -22,6 +22,14 @@ public class HelloController {
     }
     @GetMapping(path = "/calculator/minus")
     public String calculatorMinus(int num1, int num2){
-        return helloService.calculatorPlus(num1,num2);
+        return helloService.calculatorMinus(num1,num2);
+    }
+    @GetMapping(path = "/calculator/multiply")
+    public String calculatorMultiply(int num1, int num2){
+        return helloService.calculatorMultiply(num1,num2);
+    }
+    @GetMapping(path = "/calculator/divide")
+    public String calculatorDivide(float num1, float num2){
+        return helloService.calculatorDivide(num1,num2);
     }
 }
